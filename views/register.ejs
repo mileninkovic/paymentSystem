@@ -7,5 +7,14 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <section>
+      <form action="/registerData" method="POST">
+        <label for="userID">User:</label>
+        <input type="text" id="userID" name="user" value="<%= registerData.user %>">
+        <label for="pw">Password:</label>
+        <input type="password" name="password" id="pw" value="<%= registerData.password %>">
+        <button type="submit">Send</button>
+      </form>
+    </section>
   </body>
 </html>

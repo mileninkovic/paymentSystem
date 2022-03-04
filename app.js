@@ -26,7 +26,12 @@ app.use('/users', usersRouter);
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 
-app.post('/userData', (req, res) =>{
+app.post('/loginData', (req, res) =>{
+  console.log(req.body.user);
+  console.log(req.body.password);
+});
+
+app.post('/registerData', (req, res) =>{
   console.log(req.body.user);
   console.log(req.body.password);
 });
